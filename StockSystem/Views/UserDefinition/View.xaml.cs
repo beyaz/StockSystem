@@ -21,5 +21,16 @@ namespace StockSystem.Views.UserDefinition
         {
             InitializeComponent();
         }
+
+         void Button_Click(object sender, RoutedEventArgs e)
+         {
+             var controller = new Controller {Model = Model};
+            controller.Validate();
+             var result = controller.Result;
+             if (!string.IsNullOrWhiteSpace(result.WarningMessage))
+             {
+                 MessageBox.Show(result.WarningMessage);
+             }
+         }
     }
 }

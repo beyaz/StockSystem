@@ -75,9 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Startup.cs" />
-    <Compile Include="UIControls\WComboBox.cs" />
-    <Compile Include="UIControls\WTextBox.cs" />
-    <Compile Include="UIControls\WUserControl.cs" />
     <Compile Include="Views\UserDefinition\Controller.cs" />
     <Compile Include="Views\UserDefinition\Model.cs" />
     <Compile Include="Views\UserDefinition\View.xaml.cs">

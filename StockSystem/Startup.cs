@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using System.Windows;
+using StockSystem.Views.UserDefinition;
 using WhiteStone.UI.Shell;
 
 namespace StockSystem
@@ -9,7 +10,7 @@ namespace StockSystem
     {
         public void Start()
         {
-            MessageBox.Show("Aloha");
+            Application.Current.MainWindow.Content = new Views.UserDefinition.View {Model = new Model()};
         }
     }
 }
