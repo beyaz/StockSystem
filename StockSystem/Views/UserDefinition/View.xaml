@@ -1,0 +1,23 @@
+﻿<ui:WUserControl
+    x:Class="StockSystem.Views.UserDefinition.View"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:StockSystem.Views.UserDefinition"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="clr-namespace:StockSystem.UIControls"
+    x:Name="CodeBehind"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    DataContext="{Binding ElementName=CodeBehind}"
+    mc:Ignorable="d">
+    <StackPanel>
+
+        <ui:WTextBox wLabel="İsim" wText="{Binding Path=Model.Name, Mode=TwoWay}" />
+        <ui:WTextBox wLabel="Kullanıcı Adı" wText="{Binding Path=Model.UserName, Mode=TwoWay}" />
+        <ui:WTextBox wLabel="Şifre" wText="{Binding Path=Model.Password, Mode=TwoWay}" />
+
+
+    </StackPanel>
+</ui:WUserControl>
+

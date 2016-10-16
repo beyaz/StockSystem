@@ -243,3 +243,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/StockSystem/Properties/Resources.resx
+/StockSystem/Properties/Settings.Designer.cs
+/StockSystem/Properties/Settings.settings
